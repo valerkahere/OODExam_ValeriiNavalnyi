@@ -1,0 +1,64 @@
+﻿<Window x:Class="OODExam_ValeriiNavalnyi.NewTrainingSession"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OODExam_ValeriiNavalnyi"
+        mc:Ignorable="d"
+        Title="NewTrainingSession" Height="450" Width="800">
+
+
+    <Grid>
+        <TextBlock Text="Add New Training Session" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,16,0,4"/>
+
+
+
+        <TextBox 
+                     x:Name="tbx_coachNotes"
+                    
+                     Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+        <TextBox x:Name="tbxNotes"
+         Height="120"
+         AcceptsReturn="True"
+         TextWrapping="Wrap"
+         VerticalScrollBarVisibility="Auto"
+         
+         Style="{StaticResource MaterialDesignOutlinedTextBox}"
+         Margin="174,190,278,124"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,294,278,29" Width="204">
+            <Button Content="CANCEL"
+
+Style="{StaticResource MaterialDesignFlatSecondaryButton}"
+            Margin="0,0,8,0"/>
+            <Button Content="SAVE"
+
+            Style="{StaticResource MaterialDesignRaisedButton}"
+            />
+
+        </StackPanel>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="80,64,0,0" VerticalAlignment="Top"/>
+       
+        <DatePicker HorizontalAlignment="Left" Margin="253,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.75,-0.958"/>
+
+
+        <Label Content="Start Time" HorizontalAlignment="Left" Margin="80,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Session Type" HorizontalAlignment="Left" Margin="80,122,0,0" VerticalAlignment="Top"/>
+
+
+        <Label Content="Duration (mins)" HorizontalAlignment="Left" Margin="80,151,0,0" VerticalAlignment="Top"/>
+
+
+        
+        <Label Content="Coach Notes" HorizontalAlignment="Left" Margin="80,190,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="186,151,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="186,122,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="186,93,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+
+
+
+
+
+</Window>

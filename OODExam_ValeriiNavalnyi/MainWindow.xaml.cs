@@ -39,7 +39,25 @@ namespace OODExam_ValeriiNavalnyi
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Member selectedMember = lbx_Members.SelectedItem as Member;
 
+            if (selectedMember == null)
+            {
+                MessageBox.Show("Please select a patient first.");
+                return;
+            }
+
+            // Pass patient to the child window constructor
+            NewTrainingSession apptWindow = new NewTrainingSession(selectedMember);
+
+            // Set parent so child is centred over main window
+            apptWindow.Owner = this;
+
+            // ShowDialog() blocks — waits for child to close before continuing
+            apptWindow.ShowDialog();
+
+            // After child closes, refresh the appointments list
+            DisplayMembers();
         }
 
 
