@@ -21,5 +21,10 @@ namespace OODExam_ValeriiNavalnyi
 
         // Navigation property — a Training BELONGS TO one Member
         public virtual Member Member { get; set; }
+
+        public override string ToString()
+        {
+            return $"{TrainingSessionDate.ToShortDateString()}: {CoachNotes}";
+        }
     }
 }

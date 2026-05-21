@@ -18,9 +18,9 @@ namespace OODExam_ValeriiNavalnyi
         public string ContactNumber { get; set; }
         public string MembershipType { get; set; }
 
-        // Navigation property — a patient HAS MANY appointments
+        // Navigation property — a member HAS MANY training sessions
         // "virtual" enables lazy loading
-        public virtual List<TrainingSession> Members { get; set; }
+        public virtual List<TrainingSession> trainingSessions { get; set; }
 
 
         public override string ToString()

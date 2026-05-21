@@ -11,7 +11,7 @@ TextElement.FontFamily="{DynamicResource MaterialDesignFont}"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Add Session" Click="Button_Click" HorizontalAlignment="Left" Margin="427,210,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lbx_Members" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="11,112,616,95"/>
+        <ListBox x:Name="lbx_Members" SelectionChanged="lbx_Members_SelectionChanged" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="11,112,616,95"/>
         <Label Content="Members" Margin="19,55,653,357" RenderTransformOrigin="3.092,2.86"/>
         <Label Content="Member Details" Margin="209,55,436,357"/>
         <Label Content="Training Sessions" Margin="209,215,400,197"/>
@@ -22,12 +22,13 @@ TextElement.FontFamily="{DynamicResource MaterialDesignFont}"
         <Label Content="Membership Type:" Margin="413,140,275,272" RenderTransformOrigin="3.092,2.86"/>
         <Label Content="DOB:" Margin="630,140,119,272" RenderTransformOrigin="3.092,2.86"/>
         <TextBlock x:Name="tbl_id" HorizontalAlignment="Left" Margin="260,101,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tbl_id_Copy" HorizontalAlignment="Left" Margin="522,101,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tbl_id_Copy1" HorizontalAlignment="Left" Margin="522,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tbl_id_Copy2" HorizontalAlignment="Left" Margin="314,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="86"/>
-        <TextBlock x:Name="tbl_id_Copy3" HorizontalAlignment="Left" Margin="668,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.872,-2.08"/>
-        <TextBlock x:Name="tbl_id_Copy4" HorizontalAlignment="Left" Margin="704,101,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.872,-2.08"/>
-        <ListBox x:Name="lbx_trainingSessions" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="211,263,107,95"/>
+        <TextBlock x:Name="tbl_fName" HorizontalAlignment="Left" Margin="522,101,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbl_lName" HorizontalAlignment="Left" Margin="704,101,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.872,-2.08"/>
+
+        <TextBlock x:Name="tbl_contactNumber" HorizontalAlignment="Left" Margin="314,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="86"/>
+        <TextBlock x:Name="tbl_membershipType" HorizontalAlignment="Left" Margin="522,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbl_dateOfBirth" HorizontalAlignment="Left" Margin="668,144,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.872,-2.08"/>
+        <ListBox x:Name="lbx_trainingSessions" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="211,263,107,10"/>
 
 
     </Grid>
