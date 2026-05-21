@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace OODExam_ValeriiNavalnyi
 {
@@ -21,5 +22,10 @@ namespace OODExam_ValeriiNavalnyi
         // "virtual" enables lazy loading
         public virtual List<TrainingSession> Members { get; set; }
 
+
+        public override string ToString()
+        {
+            return $"{Surname}, {FirstName} — {ContactNumber}";
+        }
     }
 }

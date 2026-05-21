@@ -10,11 +10,11 @@ Background="{DynamicResource MaterialDesignPaper}"
 TextElement.FontFamily="{DynamicResource MaterialDesignFont}"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Add Session" Click="Button_Click" HorizontalAlignment="Center" Margin="0,209,0,0" VerticalAlignment="Top"/>
+        <Button Content="Add Session" Click="Button_Click" HorizontalAlignment="Left" Margin="427,210,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lbx_Members" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="11,112,616,95"/>
-        <Label Content="Members" Margin="19,55,717,357" RenderTransformOrigin="3.092,2.86"/>
+        <Label Content="Members" Margin="19,55,653,357" RenderTransformOrigin="3.092,2.86"/>
         <Label Content="Member Details" Margin="209,55,436,357"/>
-        <Label Content="Training Sessions" Margin="209,215,436,197"/>
+        <Label Content="Training Sessions" Margin="209,215,400,197"/>
         <Label Content="ID:" Margin="211,97,563,315" RenderTransformOrigin="3.092,2.86"/>
         <Label Content="Contact Number:" Margin="211,140,491,272" RenderTransformOrigin="3.092,2.86"/>
         <Label Content="First Name:" Margin="413,97,312,315" RenderTransformOrigin="3.092,2.86"/>
