@@ -10,9 +10,9 @@ namespace OODExam_ValeriiNavalnyi
     public class TrainingSession
     {
 
-        public int SessionId { get; set; }
-        public DateTime SessionDate { get; set; }
-        public string SessionType { get; set; }
+        public int TrainingSessionId { get; set; }
+        public DateTime TrainingSessionDate { get; set; }
+        public string TrainingSessionType { get; set; }
         public int DurationMinutes { get; set; }
         public string CoachNotes { get; set; }
 
