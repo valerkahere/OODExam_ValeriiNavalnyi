@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODExam_ValeriiNavalnyi", "OODExam_ValeriiNavalnyi\OODExam_ValeriiNavalnyi.csproj", "{52B059F8-19C2-459B-ACD3-09A7BF01FDC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseManagement", "DatabaseManagement\DatabaseManagement.csproj", "{236F9AE3-7387-4394-8E29-098C6EDD6306}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52B059F8-19C2-459B-ACD3-09A7BF01FDC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B059F8-19C2-459B-ACD3-09A7BF01FDC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B059F8-19C2-459B-ACD3-09A7BF01FDC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B059F8-19C2-459B-ACD3-09A7BF01FDC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236F9AE3-7387-4394-8E29-098C6EDD6306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236F9AE3-7387-4394-8E29-098C6EDD6306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236F9AE3-7387-4394-8E29-098C6EDD6306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236F9AE3-7387-4394-8E29-098C6EDD6306}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9A5CCF2-A6C6-4883-9E6A-107F4490857C}
+	EndGlobalSection
+EndGlobal
