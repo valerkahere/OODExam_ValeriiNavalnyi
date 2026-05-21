@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace OODExam_ValeriiNavalnyi
 {
+    // Member.cs — the "one" side
     public class Member
     {
 
@@ -16,6 +17,9 @@ namespace OODExam_ValeriiNavalnyi
         public string ContactNumber { get; set; }
         public string MembershipType { get; set; }
 
+        // Navigation property — a patient HAS MANY appointments
+        // "virtual" enables lazy loading
+        public virtual List<TrainingSession> Members { get; set; }
 
     }
 }
